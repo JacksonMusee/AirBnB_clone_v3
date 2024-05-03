@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Flask apllication
+Flask apllication return  "status": "OK"
+Flask apllication return  "status": "OK"
 """
 
 import os
