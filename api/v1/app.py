@@ -17,6 +17,9 @@ app.register_blueprint(app_views)
 
 @app.teardown_appcontext
 def teardown_appcontext(exception):
+    """
+    Claose the storage when app tear down/closes
+    """
     storage.close()
 
 if __name__ == "__main__":
