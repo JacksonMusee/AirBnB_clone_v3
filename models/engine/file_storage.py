@@ -37,7 +37,7 @@ class FileStorage:
     def get(self, cls, id):
         """Get a specific object"""
         for key, val in self.__objects.items():
-            if key == f"{cls}.{id}"
+            if key == f"{cls}.{id}":
                 return val
         return None
 
