@@ -19,7 +19,7 @@ def teardown_appcontext(exception):
     """
     Close the storage when app tear down/closes
     """
-    storage.close()i
+    storage.close()
 
 
 if __name__ == "__main__":
