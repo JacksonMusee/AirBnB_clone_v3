@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 Flask apllication return  status: OK
-Flask apllication return  status: OK
 """
 
 import os
@@ -20,9 +19,13 @@ def teardown_appcontext(exception):
     """
     Close the storage when app tear down/closes
     """
-    storage.close()
+    storage.close()i
+
 
 if __name__ == "__main__":
+    """
+    Start app
+    """
     host = os.getenv("HBNB_API_HOST", "0.0.0.0")
     port = int(os.getenv("HBNB_API_PORT", 5000))
     app.run(host=host, port=port, threaded=True)
