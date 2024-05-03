@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Flask apllication return  "status": "OK"
-Flask apllication return  "status": "OK"
+Flask apllication return  status: OK
+Flask apllication return  status: OK
 """
 
 import os
@@ -18,7 +18,7 @@ app.register_blueprint(app_views)
 @app.teardown_appcontext
 def teardown_appcontext(exception):
     """
-    Claose the storage when app tear down/closes
+    Close the storage when app tear down/closes
     """
     storage.close()
 
